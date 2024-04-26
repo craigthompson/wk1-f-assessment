@@ -72,9 +72,9 @@ function everyOtherItem(items) {
 //   => [1, 4]
 function findWordsStartingWith(words, letter) {
   const newArr = [];
-  for (const word of words) {
-    if (word[0] === letter) {
-      newArr.push(words.indexOf(word)); // TODO: this has unnecessary complexity in that it has to search the words array again. Optimize by using a for loop using the index.
+  for (let i = 0; i < words.length; i++) {
+    if (words[i][0] === letter) {
+      newArr.push(i);
     }
   }
   return newArr;
