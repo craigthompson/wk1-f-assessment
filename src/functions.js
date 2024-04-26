@@ -86,11 +86,6 @@ function leetspeak(string) {
   for (let i = 0; i < string.length; i++) {
     const indexInLetters = leetspeakLetters.indexOf(string[i]);
     str += indexInLetters === -1 ? string[i] : leetspeakNums[indexInLetters];
-    // if (indexInLetters === -1) {
-    //   str += string[i];
-    // } else {
-    //   str += leetspeakNums[indexInLetters];
-    // }
   }
   return str;
 }
